@@ -19,13 +19,13 @@ fi
 
 if [ "$y_flag" = true ] ; then
   for FILE in $FILES; do
-    if [ -f $FILE ]; then
+    if [ -e $FILE ]; then
       git rm -r $FILE 2>/dev/null
     fi
   done
 else
   for FILE in $FILES; do
-    if [ -f $FILE ]; then
+    if [ -e $FILE ]; then
       echo "remove $FILE?"
       read -p "Continue (y/n)?" choice
       case "$choice" in 

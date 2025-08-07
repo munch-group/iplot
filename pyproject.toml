@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "iplot"
-version = "0.1.1"
+version = "0.1.0"
 description = "Project description"
 authors = [
     {name = "Your Name", email = "your@email.com"}
@@ -17,13 +17,10 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    "cryptography",
+    "ipywidgets",
     "jupyterlab>=4",
-    "nbdime", 
     "seaborn",
-    "scipy",
-    "scikit-learn",
-    "statsmodels",
+    "nodejs",
 ]
 
 [project.urls]
@@ -83,7 +80,7 @@ black = "*"
 ruff = "*"
 
 [tool.pixi.tasks.init-project]
-cmd = "./scripts/template_init.py && ./scripts/prune-project.sh -y"
+cmd = "./scripts/init-project.sh -y"
 description = "Initialize template and remove project-specific files"
 
 [tool.pixi.tasks.install-claude]
@@ -94,7 +91,7 @@ cmd = "bash .scripts/claude-session.sh {{ '--new' if 'new' in new }}"
 args = [ { arg = "new", default = "" } ]
 
 [tool.pixi.tasks.init-library]
-cmd = "./scripts/prune-library.sh -y"
+cmd = "./scripts/init-library.sh -y"
 description = "Remove files not relevant to library development"
 
 [tool.pixi.tasks.init-template]
