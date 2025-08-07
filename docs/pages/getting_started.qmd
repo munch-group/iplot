@@ -1,0 +1,48 @@
+---
+title: Getting started
+aliases:
+  - ../index.html
+jupyter:
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+**plotwidgets** lets you explore the relationships between variables in a dataset using the standard visualization libraries - without writing new code for each plot. 
+
+![](./images/seaborn.gif)
+
+## Installation
+
+```bash
+conda install -c munch-group plotwidgets
+```
+
+## Seaborn
+
+The [](`plotwidgets.seaborn`) function produces a widget with dropdown menus that lets you change all the specified dimensions of your visualization.
+
+You can load an example data frame like this:
+
+```{python}
+import seaborn as sns
+data = sns.load_dataset('penguins')
+```
+
+You pass the data as the first argument to [](`~plotwidgets.seaborn`) and give keyword arguments for the plot variables you want to control. The values of keyword arguments are the variables in the data frame that are initially displayed. (This is not live code, so the plot below will not update if you use the dropdowns).
+
+```{python}
+import plotwidgets as pw
+pw.seaborn(data, x='flipper_length_mm', y='body_mass_g', hue='sex', wrap=2)
+```
+
+
+See [this page](seaborn.qmd) for more documentation.
+
+
+## Learning more
+
+* [Seaborn](https://seaborn.pydata.org) scientific visualization.
+* [Pandas](https://pandas.pydata.org/docs/index.html#) data structures.
+* [Jupyter](https://jupyter.org/) notebooks.

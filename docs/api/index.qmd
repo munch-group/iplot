@@ -1,0 +1,9 @@
+# Function reference {.doc .doc-index}
+
+## Some section
+
+
+
+| | |
+| --- | --- |
+| [seaborn](seaborn.qmd#plotwidgets.seaborn) | This function is a wrapper for seaborn plots. It creates a set of dropdowns  |
