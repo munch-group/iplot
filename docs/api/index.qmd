@@ -6,4 +6,4 @@
 
 | | |
 | --- | --- |
-| [seaborn](seaborn.qmd#plotwidgets.seaborn) | This function is a wrapper for seaborn plots. It creates a set of dropdowns  |
+| [seaborn](seaborn.qmd#iplot.seaborn) | This function is a wrapper for seaborn plots. It creates a set of dropdowns  |

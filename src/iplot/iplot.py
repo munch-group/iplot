@@ -61,7 +61,7 @@ OPTIONS = dict(
 
 def set_options(**kwargs) -> None:
     """
-    Calling `plotwidgets.seaborn with only the `data` positional argument will display dropdowns for all plot dimensions and include 
+    Calling `iplot.seaborn with only the `data` positional argument will display dropdowns for all plot dimensions and include 
     all axis level seaborn graphics in the plot drowpdown. This function allows you limit the available plot dimensions and/or set their
     default values. It is also possible to set the plot theme by providing a dictionary with keyword arguments for seaborn.set_theme().
 
@@ -92,21 +92,21 @@ def set_options(**kwargs) -> None:
     Limit the plot dimensions to 'x', 'y' and set the available graphics to 'scatterplot' and 'lineplot'.
 
     ```python
-    import plotwidgets as pw
+    import iplot as pw
     pw.set_options(x=None, y=None, graphics=[sns.scatterplot, sns.lineplot])
     ```
 
     Do the same but set the default values for 'x' and 'y' to 'flipper_length_mm' and 'body_mass_g' respectively.
     
      ```python
-    import plotwidgets as pw
+    import iplot as pw
     pw.set_options(x='flipper_length_mm', y='body_mass_g', graphics=[sns.scatterplot, sns.lineplot])
     ```
 
     Set the color palette to 'colorblind':
 
     ```python
-    import plotwidgets as pw
+    import iplot as pw
     pw.set_options(theme={'palette': 'colorblind'})
     ```
     """    
@@ -138,7 +138,7 @@ def iplot(data: pandas.DataFrame, x: str=None, y: str=None, hue: str=None, row: 
     Examples
     --------    
     
-    Import `plotwidgets` and `seaborn` to load the `penguins` example dataset:
+    Import `iplot` and `seaborn` to load the `penguins` example dataset:
     
     ```python
     import seaborn as sns

@@ -18,7 +18,7 @@ seaborn.lineplot, s
 
 ## Plot signatures
 
-[](`plotwidgets.seaborn`) will limit the "Plot" options to the seaborn graphics compatible with the keywords arguments supplied.
+[](`iplot.seaborn`) will limit the "Plot" options to the seaborn graphics compatible with the keywords arguments supplied.
 
 ## No keyword argumnets
 

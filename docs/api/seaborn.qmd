@@ -1,7 +1,7 @@
-# seaborn { #plotwidgets.seaborn }
+# seaborn { #iplot.seaborn }
 
 ```python
-plotwidgets.seaborn(
+iplot.seaborn(
     data
     plot=None
     graphics=None
@@ -53,7 +53,7 @@ dropdown menus for `x`, `y`, and `hue` variables. Selecting form the dropdowns w
 
 ```python
 import seaborn as sns
-import plotwidgets as pw
+import iplot as pw
 data = sns.load_dataset('penguins')
 pw.seaborn(data, x='flipper_length_mm', y='body_mass_g', hue='species')
 ```

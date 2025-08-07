@@ -31,7 +31,7 @@ interlinks:
       url: https://ipython.readthedocs.io/en/stable/          
 
 website:
-  title: "plotwidgets"
+  title: "iplot"
   page-navigation: true
   navbar:
     left:
@@ -39,7 +39,7 @@ website:
         text: Reference
     right:
       - icon: github
-        href: https://github.com/munch-group/plotwidgets/
+        href: https://github.com/munch-group/iplot/
   sidebar:
     - id: pages
       title: Get Started
@@ -69,7 +69,7 @@ format:
 quartodoc:
   style: pkgdown
   dir: api
-  package: plotwidgets
+  package: iplot
   render_interlinks: true
   options:
     signature_name: full

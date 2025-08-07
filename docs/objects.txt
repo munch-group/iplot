@@ -1,5 +1,5 @@
 # Sphinx inventory version 2
-# Project: plotwidgets
+# Project: iplot
 # Version: 0.0.9999
 # The remainder of this file is compressed using zlib.
-plotwidgets.seaborn py:function 1 api/seaborn.html#plotwidgets.seaborn -
+iplot.seaborn py:function 1 api/seaborn.html#iplot.seaborn -
