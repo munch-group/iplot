@@ -59,7 +59,7 @@ OPTIONS = dict(
     )
 
 
-def set_options(**kwargs) -> None:
+def iplot_settings(**kwargs) -> None:
     """
     Calling `iplot.seaborn with only the `data` positional argument will display dropdowns for all plot dimensions and include 
     all axis level seaborn graphics in the plot drowpdown. This function allows you limit the available plot dimensions and/or set their
@@ -110,7 +110,7 @@ def set_options(**kwargs) -> None:
     pw.set_options(theme={'palette': 'colorblind'})
     ```
     """    
-
+    global OPTIONS
     OPTIONS.update(kwargs)
 
 
@@ -365,7 +365,7 @@ def iplot(data: pandas.DataFrame, x: str=None, y: str=None, hue: str=None, row: 
 
             else:
                 extra_kwargs['height'] = default_height
-
+            print(extra_kwargs['height'])
             # set kind for figure level plots
             kind = selected_plot.__name__.replace('plot', '')
             extra_kwargs['kind'] = kind 

@@ -1,5 +1,5 @@
 
-from .iplot import iplot
+from .iplot import iplot, iplot_settings
 
 
 # import sys
