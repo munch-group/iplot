@@ -360,12 +360,12 @@ def iplot(data: pandas.DataFrame, x: str=None, y: str=None, hue: str=None, row: 
                 max_square_size = sqrt(OPTIONS['max_figure_height'] * OPTIONS['max_figure_width'] / col_cats)
 
                 extra_kwargs['height'] = find_facet_size(0, max_square_size) - tolerance
-                print(OPTIONS['max_figure_height'],  OPTIONS['max_figure_width'],  extra_kwargs['height'])
+                # print(OPTIONS['max_figure_height'],  OPTIONS['max_figure_width'],  extra_kwargs['height'])
                 extra_kwargs['col_wrap'] = int(OPTIONS['max_figure_width'] / extra_kwargs['height'])
 
             else:
                 extra_kwargs['height'] = default_height
-            print(extra_kwargs['height'])
+            # print(extra_kwargs['height'])
             # set kind for figure level plots
             kind = selected_plot.__name__.replace('plot', '')
             extra_kwargs['kind'] = kind 
@@ -487,7 +487,7 @@ for details and additional arguments to <code>sns.{figure_level_plot_function.__
         "<style>.button-spacing-class {margin-left: 3em; margin-right: 2em;}</style>"
         ))
     
-    dropdowns_layout = widgets.Layout(max_width='15em', height='auto',) #set width and height
+    dropdowns_layout = widgets.Layout(max_width='17em', height='auto',) #set width and height
     dropdowns_list = [widgets.Box([dropdowns[key]], layout=dropdowns_layout) for key in ['x', 'y', 'hue', 'row', 'col', 'plot'] if key in dropdowns]
     display(HTML(
         "<style> .widget-label { max-width: 3em !important; } </style>"

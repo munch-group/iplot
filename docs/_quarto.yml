@@ -47,13 +47,13 @@ website:
       align: left
       contents:
         - pages/getting_started.qmd
-        - section: "Widgets"
-          contents:
-            - pages/seaborn.qmd            
+        # - section: "Widgets"
+        #   contents:
+        #     - pages/seaborn.qmd            
         - section: "Examples"
           contents:
-            - examples/showcase.ipynb            
-            - examples/widgets.ipynb            
+            - examples/example.ipynb            
+            # - examples/widgets.ipynb            
         - section: "Library reference"
           contents:
             - api/index.qmd
