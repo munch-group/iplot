@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "iplot"
-version = "0.1.5"
+version = "0.1.6"
 description = "Project description"
 authors = [
     {name = "Your Name", email = "your@email.com"}
@@ -43,7 +43,7 @@ iplot = ["data/*.txt", "data/*.csv", "data/*.pickle", "data/*.h5"]
 
 [tool.pixi.project]
 name = "iplot"
-version = "0.1.5"
+version = "0.1.6"
 description = "Project description"
 authors = ["Your Name <your@email.com>"]
 channels = ["conda-forge"]
