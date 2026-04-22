@@ -52,8 +52,11 @@ for kind in ['reg']:
     AX2FIG[kind] = sns.lmplot
 
 OPTIONS = dict(
+    default_height=5,
     max_figure_width=10, 
     max_figure_height=5,
+    max_facet_height = 3
+    min_facet_height = 2
     theme = dict(style='darkgrid', palette='viridis'),
     graphics=AXIS_LEVEL_GRAPHICS
     )
@@ -319,9 +322,9 @@ def iplot(data: pandas.DataFrame, x: str=None, y: str=None, hue: str=None, row: 
             # extra plot kwargs for figure level seaborn plots
             extra_kwargs = {}
 
-            max_facet_height = 5
-            min_facet_height = 2
-            default_height = 5
+            max_facet_height = OPTIONS['max_facet_height']
+            min_facet_height = OPTIONS['min_facet_height']
+            default_height = OPTIONS['default_height']
 
             # find size of facets
             row_cats, col_cats = 1, 1
